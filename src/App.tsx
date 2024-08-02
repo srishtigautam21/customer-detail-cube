@@ -43,26 +43,23 @@ function App() {
   const [selectedUser, setSelectedUser] = useState<User | null>(null);
 
   const getUsers = async () => {
-    fetch("https://dummyjson.com/users")
-      .then((res) => res.json())
-      .then((json) => {
-        const allUsers = json.users.map((user: UserFromAPI) => {
-          return {
-            id: user.id,
-            firstName: user.firstName,
-            email: user.email,
-            address: user.address.address,
-            city: user.address.city,
-            postalCode: user.address.postalCode,
-            state: user.address.state,
-            title: user.company.title,
-            detail: detailText,
-          };
-        });
-        setUsers(allUsers);
-
-        setSelectedUser(allUsers[0]);
-      });
+    const response = await fetch("https://dummyjson.com/users");
+    const data = await response.json();
+    const allUsers = data?.users.map((user: UserFromAPI) => {
+      return {
+        id: user.id,
+        firstName: user.firstName,
+        email: user.email,
+        address: user.address.address,
+        city: user.address.city,
+        postalCode: user.address.postalCode,
+        state: user.address.state,
+        title: user.company.title,
+        detail: detailText,
+      };
+    });
+    setUsers(allUsers);
+    setSelectedUser(allUsers[0]);
   };
   useEffect(() => {
     getUsers();

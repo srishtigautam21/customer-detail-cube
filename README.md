@@ -1,30 +1,36 @@
-# React + TypeScript + Vite
+## Customer Details Portal (Cube Assignment)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Live-link
 
-Currently, two official plugins are available:
+[ Customer Details Portal](https://customer-detail-cube.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### About
 
-## Expanding the ESLint configuration
+This project is a web application built using the ReactJs + Typescript library and TailwindCSS. It demonstrates the skills of working with API calls, nested array of objects, handling state, grids and managing UI components.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Features
 
-- Configure the top-level `parserOptions` property like this:
+1. A list of customers fetched from dummyjson API.
+2. Details of a specific customer on click of any customer from above list.
+3. A 3\*3 grid of photos changing an interval of 10sec.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Installation
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Clone the Repository:
+
+##
+
+    git clone https://github.com/srishtigautam21/customer-detail-cube.git
+    cd cube-assignment
+
+- Install Dependencies:
+
+##
+
+    npm install
+
+- Run the Application:
+
+##
+
+    npm run dev

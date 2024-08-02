@@ -6,7 +6,7 @@
 
 ### About
 
-This project is a web application built using the ReactJs + Typescript library and TailwindCSS. It demonstrates the skills of working with API calls, nested array of objects, handling state, grids and managing UI components.
+This project is a web application built using the ReactJs + Typescript and TailwindCSS. It demonstrates the skills of working with API calls, nested array of objects, handling state, grids and managing UI components.
 
 ### Features
 
